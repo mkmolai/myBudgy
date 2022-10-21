@@ -1,0 +1,61 @@
+
+
+HANDLE EDIT FUNCTION ------------------------
+
+const handleEdit = (e) => {
+    
+    const target_id = e.target.id;
+    const new_list = my_list.amp(item => {
+
+        if(item.id===target_id)
+        {
+            return {...item, item.targeted_key: new_value}
+        }
+        return item
+    })
+
+    setList([...new_list])
+
+}
+
+/* Task Edit
+
+    //change my button to display Edit
+    //display the current value linked to that id in my form input element
+    //i want to color the item being edited in the list
+    //i want an alert to fire when the user inputs more than 20 characters
+    //when submit is clicked user should see item updated with new description
+
+*/
+
+const [isEditing, setIsEditing] = useState(false);
+
+const handleEdit = (id) => {
+    setEditing(true); 
+    const description = list_naame.find(item => item.id == id);
+    setValue(description)
+    setValue( {description} )
+
+}
+
+DOM{
+    <div style={{backgroundColor: isEditing? 'pink' : '' }}>List item description here</div>
+}
+
+HANDLE DELETE FUNCTION ------------------------
+
+const handleDelete = (id) => {
+    const new_list = my_list.filter(item => item.id !== id);
+    setList({...new_list})
+}
+
+
+HANDLE CREATE FUNCTION ------------------------
+
+const handleSubmit = () => {
+    const new_item = {id: new Date().getTime().toString(), title: item, completed: false}
+    if(item)
+    {
+        setList([...list, new_item])
+    }
+}

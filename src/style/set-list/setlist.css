@@ -1,0 +1,193 @@
+.set-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+}
+
+.set-list .heading {
+  position: absolute;
+  left: 50%;
+  top: -30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: rgba(0, 14, 90, 0.1) !important;
+  font-size: 7rem;
+  font-family: Poppins-Bold;
+}
+
+.set-list h1 {
+  font-family: SoccerLeague;
+  font-size: 5rem;
+  color: #000E5A;
+  line-height: 55px;
+}
+
+.set-list h4 {
+  font-family: SoccerLeague;
+  color: #a5a5a5;
+}
+
+.set-list .month {
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #8D03E4;
+  width: 350px;
+  height: 200px;
+  margin-right: -50px;
+}
+
+.set-list .month h1 {
+  font-size: 3rem;
+  line-height: 35px;
+}
+
+.set-list .month .month-name h4 {
+  color: rgba(0, 14, 90, 0.3);
+}
+
+.set-list .month .month-days h5 {
+  background: rgba(0, 38, 247, 0.05) !important;
+  padding: 0px 10px;
+  font-family: SoccerLeague;
+  border-radius: 6px;
+  color: #000E5A;
+  cursor: pointer;
+}
+
+.set-list .month .month-days h5:hover {
+  background: #000E5A;
+  color: wheat;
+}
+
+.set-list .huge-button-right {
+  background: url(../../assets/MyBudgyBG.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.set-list .huge-button-right .budget-amount {
+  border-bottom: 1px dashed white;
+}
+
+.set-list .huge-button-right .budget-amount h4 {
+  color: white;
+}
+
+.set-list .huge-button-right .button-text a {
+  font-family: SoccerLeague;
+  font-size: 2.4rem;
+  color: white;
+}
+
+.set-list .huge-button-right .button-text span {
+  color: wheat;
+  font-size: 1.5rem;
+  font-family: Poppins;
+  line-height: 1px;
+  border-bottom: 1px solid rgba(245, 222, 179, 0.4);
+  padding-bottom: 20px;
+}
+
+.set-list .huge-button-right:hover {
+  background: #000E5A;
+  border: 3px solid white;
+}
+
+.set-list .month-display {
+  background: white;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.set-list .basic-card-right {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  width: 450px;
+  height: 450px;
+}
+
+.set-list .basic-card-right::after {
+  content: 'Set your list';
+  color: white;
+  text-align: center;
+  padding: 19px;
+  font: 1.4rem SoccerLeague;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: #000E5A;
+  border-radius: 14px 14px 0 0;
+}
+
+.set-list .basic-card-right .input-groceries form span {
+  color: #0026F7;
+  font: 900;
+}
+
+.set-list .basic-card-right .input-groceries form button {
+  background: #8D03E4;
+  border: none;
+  color: whitesmoke;
+  font-family: Godzilla;
+  font-size: 1.1rem;
+  padding: 3px 12px;
+  border-radius: 5px;
+  -webkit-transition: all  .2s ease-in-out;
+  transition: all  .2s ease-in-out;
+}
+
+.set-list .basic-card-right .input-groceries form button:hover {
+  background: #0027a7;
+}
+
+.set-list .basic-card-right .my-list-set ul {
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+.set-list .basic-card-right .my-list-set ul li {
+  border-left: 1px solid #8400ff;
+}
+
+.set-list .basic-card-right .my-list-set ul li h6 {
+  font-size: 1rem;
+  color: #0026F7;
+  background: none;
+}
+
+.set-list .basic-card-right .my-list-set ul li div {
+  min-width: 20%;
+}
+
+.set-list .basic-card-right .my-list-set ul li div span {
+  color: darkslategray;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.set-list .basic-card-right .my-list-set ul li div span:hover {
+  color: #00e096;
+}
+/*# sourceMappingURL=setlist.css.map */

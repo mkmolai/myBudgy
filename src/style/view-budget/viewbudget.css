@@ -1,0 +1,227 @@
+.setting {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70vw;
+  height: 80vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+}
+
+.setting .left {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: none;
+}
+
+.setting .left .doing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: lavender;
+  border-radius: 25px;
+  padding: 0 20px;
+  width: 320px;
+}
+
+.setting .left .doing h1 {
+  font-size: 2rem;
+  font-family: Godzilla;
+  padding-top: 10px;
+  color: #000E5A;
+}
+
+.setting .left .doing .month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #000E5A;
+  padding-left: 10px;
+}
+
+.setting .left .doing .month h3:nth-child(1) {
+  font-weight: 200;
+}
+
+.setting .left .doing .month h3:nth-child(2) {
+  margin-left: 7px;
+}
+
+.setting .left .set {
+  background: none;
+  color: #8D03E4;
+  font-family: Poppins-Bold;
+}
+
+.setting .left .set span {
+  visibility: hidden;
+  font-family: Poppins-Light;
+  -webkit-transition: visibility 1.9s ease-out;
+  transition: visibility 1.9s ease-out;
+}
+
+.setting .left .set span.typing {
+  visibility: visible;
+}
+
+.setting .left h4 {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+.setting .left .budget-set {
+  background: lavenderblush;
+  border-radius: 0 0 15px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 3px solid #8D03E4;
+}
+
+.setting .left .budget-set h6 {
+  font-size: 1.2rem;
+  color: #000E5A;
+  font-family: Poppins;
+}
+
+.setting .left .budget-set h6:nth-child(2) {
+  margin-left: 10px;
+  font-family: Poppins-Bold;
+}
+
+.setting .right {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 400px;
+  height: 250px;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid #000E5A;
+  padding: 20px;
+}
+
+.setting .right .tag {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -2px;
+  right: -2px;
+  width: 50px;
+  height: 50px;
+  background: #D80075;
+  border-radius: 0 20px 0 10px;
+}
+
+.setting .right .tag h6 {
+  color: white;
+  font-family: Godzilla;
+  font-size: 1.2rem;
+}
+
+.setting .right .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.setting .right .heading h3 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-family: SoccerLeagueItalic;
+  color: rgba(0, 14, 90, 0.9);
+}
+
+.setting .right .heading h3:nth-child(1) {
+  font-size: 2rem;
+  line-height: 20px;
+  color: rgba(0, 14, 90, 0.5);
+}
+
+.setting .right .input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  background: rgba(0, 14, 90, 0.03);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.setting .right .input-box h3 {
+  color: rgba(0, 14, 90, 0.5);
+  font-family: Poppins-Light;
+  font-size: 1rem;
+}
+
+.setting .right .input-box input {
+  outline-color: pink;
+  background: rgba(211, 211, 211, 0.3);
+  border-radius: 5px;
+  border: none;
+  padding: 7px 10px;
+}
+
+.setting .right button {
+  outline: none;
+  border: none;
+  background: #D30176;
+  color: white;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 10px;
+  font-family: Godzilla;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=viewbudget.css.map */

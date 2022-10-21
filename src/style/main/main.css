@@ -1,0 +1,129 @@
+body {
+  background: white !important;
+  background-repeat: none;
+  background-size: cover;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 3px solid #000E5A !important;
+}
+
+body .top-lining {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(#000E5A), color-stop(#0026F7), color-stop(#8D03E4), to(#D30176)) !important;
+  background: linear-gradient(to left, #000E5A, #0026F7, #8D03E4, #D30176) !important;
+}
+
+body .footer {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #000E5A !important;
+}
+
+body .footer img {
+  width: 10%;
+  margin-top: 20px;
+}
+
+.top-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70px;
+  background: rgba(141, 3, 228, 0.005);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 .5px 10px  lightgray;
+          box-shadow: 0 .5px 10px  lightgray;
+  z-index: 10;
+  background: rgba(230, 230, 250, 0.3);
+}
+
+.top-nav .nav-logo {
+  width: 10%;
+  margin-left: 50px;
+}
+
+.top-nav .active {
+  color: #8D03E4;
+}
+
+.top-nav a {
+  font-size: 1rem;
+  margin-left: 50px;
+  font-family: SoccerLeagueItalic;
+  font-weight: 100;
+  color: rgba(0, 14, 90, 0.7);
+}
+
+.top-nav a:last-child {
+  position: absolute;
+  justify-self: flex-start;
+  color: #000E5A;
+  right: 30px;
+}
+
+.top-nav a:hover {
+  color: #8D03E4;
+}
+
+.crumbs {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 20%;
+  background: none;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+.crumbs a {
+  font-size: 1rem;
+  font-family: SoccerLeagueItalic;
+  color: rgba(135, 206, 235, 0.4);
+}
+
+.app-everything {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.app-everything::before {
+  content: '';
+  background: url(../../assets/MyBudgyBG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+  opacity: 100%;
+}
+/*# sourceMappingURL=main.css.map */

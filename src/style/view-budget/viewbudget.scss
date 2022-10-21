@@ -1,0 +1,158 @@
+.setting{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 70vw; height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    .left{
+        height: fit-content;
+        background: none;
+        .doing{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: lavender;
+            border-radius: 25px;
+            padding: 0 20px;
+            width: 320px;
+            h1{
+                font-size: 2rem;
+                font-family: Godzilla;
+                padding-top: 10px;
+                color: #000E5A;
+            }
+            .month{
+                display: flex;
+                align-items: center;
+                border-left: 1px solid #000E5A;
+                padding-left: 10px;
+                h3{
+                    &:nth-child(1)
+                    {
+                        font-weight: 200;
+                    }
+                    &:nth-child(2)
+                    {
+                        margin-left: 7px;
+                    }
+                }
+            }
+        }
+        .set{
+            background: none;
+            color: #8D03E4;
+            font-family: Poppins-Bold;
+            span{
+                visibility: hidden;
+                font-family: Poppins-Light;
+                transition: visibility 1.9s ease-out;
+                &.typing{
+                    visibility: visible;
+                }
+                
+            }
+        }
+        h4{
+            margin-top: 20px;
+            font-weight: 200;
+            font-size: 1.3rem; 
+        }
+        .budget-set{
+            background: lavenderblush;
+            border-radius: 0 0 15px;
+            padding: 10px 10px;
+            display: flex;
+            border-top: 3px solid #8D03E4;
+            h6{
+                font-size: 1.2rem;
+                color: #000E5A;
+                font-family: Poppins;
+                &:nth-child(2)
+                {
+                    margin-left: 10px;
+                    font-family: Poppins-Bold;
+                }
+            }
+        }
+    }
+    .right{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 400px; height: 250px;
+        background: none;
+        border-radius: 20px;
+        border: 1px solid #000E5A;
+        padding: 20px;
+        .tag{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -2px; right: -2px;
+            width: 50px; height: 50px;
+            background: #D80075;
+            border-radius: 0 20px 0 10px;
+            h6{
+                color: white;
+                font-family: Godzilla;
+                font-size: 1.2rem;
+            }
+        }
+        .heading{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            h3{
+                display: inline-block;
+                padding: 0; margin: 0;
+                font-family: SoccerLeagueItalic;
+                color: rgba(0, 14, 90, .9);
+                &:nth-child(1)
+                {
+                    font-size: 2rem;
+                    line-height: 20px;
+                    color: rgba(0, 14, 90, .5);
+                }
+            }
+        }
+        .input-box{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 90%;
+            background: rgba(0, 14, 90, .03);
+            padding: 10px;
+            border-radius: 5px;
+            h3{
+                color: rgba(0, 14, 90, .5);
+                font-family: Poppins-Light;
+                font-size: 1rem;
+            }
+            input{
+                outline-color: pink;
+                background: rgba(211, 211, 211, .3);
+                border-radius: 5px;
+                border: none;
+                padding: 7px 10px;
+            }
+
+        }
+        button{
+            outline: none;
+            border: none;
+            background: #D30176;
+            color: white;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin-top: 10px;
+            font-family: Godzilla;
+            font-size: 1.5rem;
+        }
+    }
+}

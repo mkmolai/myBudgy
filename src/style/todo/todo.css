@@ -1,0 +1,596 @@
+@font-face {
+  font-family: Godzilla;
+  src: url("../../fonts/Godzilla.ttf");
+}
+
+@font-face {
+  font-family: SoccerLeague;
+  src: url("../../fonts/SoccerLeague.ttf");
+}
+
+@font-face {
+  font-family: SoccerLeagueItalic;
+  src: url("../../fonts/SoccerLeague-Italic.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url("../../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../../fonts//Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../../fonts//Poppins-Bold.ttf");
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80%;
+  padding-bottom: 50px;
+}
+
+.todo .summary {
+  width: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  background: linear-gradient(45deg, #000a41, #031788);
+  -webkit-box-shadow: 0.5px 0.5px 5px rgba(0, 14, 90, 0.3);
+          box-shadow: 0.5px 0.5px 5px rgba(0, 14, 90, 0.3);
+}
+
+.todo .summary hr {
+  border-color: white;
+  opacity: .2;
+}
+
+.todo .summary h1 {
+  font-family: Godzilla;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 40px;
+}
+
+.todo .summary .summary-items {
+  margin-left: -26px;
+  margin-top: 20px;
+}
+
+.todo .summary .summary-items .completed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo .summary .summary-items .completed h1 {
+  display: inline;
+  font-family: Godzilla;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 1.2rem;
+}
+
+.todo .summary .summary-items .completed h2 {
+  display: inline;
+  font-family: Godzilla;
+  font-size: 4rem;
+  color: #8D03E4;
+}
+
+.todo .summary .summary-items .pending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo .summary .summary-items .pending h1 {
+  display: inline;
+  font-family: Godzilla;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 1.2rem;
+  color: #D80075;
+}
+
+.todo .summary .summary-items .pending h2 {
+  display: inline;
+  font-family: Godzilla;
+  font-size: 4rem;
+  color: #8D03E4;
+}
+
+.todo .summary .summary-items .total {
+  display: none;
+  margin-top: 50px;
+}
+
+.todo .summary .summary-items .total h1 {
+  display: inline;
+  font-family: Godzilla;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 1rem;
+  color: #D80075;
+}
+
+.todo .summary .summary-items .total h2 {
+  display: inline;
+  font-family: Godzilla;
+  font-size: 5rem;
+  color: #8D03E4;
+}
+
+.todo .summary .total-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.todo .summary .total-products h1 {
+  font-size: 1.5rem;
+  padding: 0 15px;
+}
+
+.todo .summary .total-products h2 {
+  font-family: Godzilla;
+  font-size: 4rem;
+  color: #8D03E4;
+}
+
+.todo .summary button {
+  margin-top: 10px;
+  background: #8D03E4;
+  border: none;
+  color: white;
+  font-family: Godzilla;
+  font-size: 1.5rem;
+  padding: 1px 0;
+  border-radius: 5px;
+  -webkit-transition: all  .2s ease-in-out;
+  transition: all  .2s ease-in-out;
+}
+
+.todo .summary button:hover {
+  background: #0027a7;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.todo .make-list-outline {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.todo .make-list-outline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #000E5A, #0026F7, #8D03E4, #D30176);
+  border-radius: inherit;
+  opacity: .2;
+}
+
+.todo .make-list-outline .make-list {
+  position: relative;
+}
+
+.todo .make-list-outline .make-list .budget-container {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-height: 600px;
+  -webkit-box-shadow: 2px 2px 9px lightblue;
+          box-shadow: 2px 2px 9px lightblue;
+  border-radius: 10px;
+}
+
+.todo .make-list-outline .make-list .budget-container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo .make-list-outline .make-list .budget-container .logo img {
+  width: 38%;
+}
+
+.todo .make-list-outline .make-list .budget-container .logo h1 {
+  font-family: Poppins-Bold;
+  letter-spacing: 0px;
+}
+
+.todo .make-list-outline .make-list .budget-container h1 {
+  display: block;
+  color: #8400ff;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.todo .make-list-outline .make-list .budget-container form input {
+  border: none;
+  background: whitesmoke;
+}
+
+.todo .make-list-outline .make-list .budget-container form input:nth-child(1) {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.todo .make-list-outline .make-list .budget-container form input:nth-child(2) {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.todo .make-list-outline .make-list .budget-container form span {
+  margin-right: 10px;
+}
+
+.todo .make-list-outline .make-list .budget-container form button {
+  background: #000E5A;
+  border: none;
+  color: whitesmoke;
+  font-family: Poppins;
+  font-size: 1.1rem;
+  padding: 3px 12px;
+  border-radius: 5px;
+  -webkit-transition: all  .2s ease-in-out;
+  transition: all  .2s ease-in-out;
+}
+
+.todo .make-list-outline .make-list .budget-container form button:hover {
+  background: #0027a7;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul {
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 300px;
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item {
+  height: 100%;
+  margin: 10px 0;
+  list-style-type: none;
+  border-left: 1px solid #8400ff;
+  border-bottom: 1px solid rgba(0, 14, 90, 0.1);
+  background: rgba(0, 14, 90, 0.02);
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item div {
+  background: none;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item div h5 {
+  height: 100%;
+  font-family: Poppins;
+  font-size: 1rem;
+  display: inline-block;
+  background: none;
+  padding: 0 20px;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item div h5:nth-child(1) {
+  margin: 0;
+  color: lightgray;
+  padding: 0 10px;
+  font-size: .9rem;
+  font-family: Poppins-Light;
+  height: 100%;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item div h5:nth-child(2) {
+  height: 100%;
+  margin: 0 0px;
+  font-family: Poppins-Light;
+  border-left: 1px solid lightblue;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item div span {
+  color: rgba(0, 14, 90, 0.3);
+  margin-right: 5px;
+  font-family: Poppins-Light;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item .list-item-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: none;
+  height: 100%;
+  width: 200px;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item .list-item-actions li {
+  list-style-type: none;
+  border-left: 1px solid lightblue;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item .list-item-actions li:nth-child(1) {
+  height: 100%;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item .list-item-actions li:nth-child(1) h5 {
+  display: inline;
+  font-size: .8rem;
+  font-family: Poppins;
+  color: #000E5A;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item .list-item-actions li:nth-child(2) {
+  height: 100%;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item .list-item-actions li:nth-child(2) .icon-edit {
+  display: inline;
+  font-size: .9rem;
+  color: orange;
+  cursor: pointer;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item .list-item-actions li:nth-child(3) {
+  height: 100%;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item .list-item-actions li:nth-child(3) .icon-delete {
+  display: inline;
+  font-size: .9rem;
+  color: orange;
+  cursor: pointer;
+}
+
+.todo .make-list-outline .make-list .budget-container .my-list ul .list-item:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background: rgba(141, 3, 228, 0.1);
+}
+
+.todo .make-list-outline .make-list .budget-container .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: none;
+}
+
+.todo .make-list-outline .make-list .budget-container .money span {
+  color: #000E5A;
+  font-size: 1.1rem;
+  font-family: Poppins;
+}
+
+.todo .make-list-outline .make-list .budget-container .money div {
+  width: 35%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.todo .make-list-outline .make-list .budget-container .money .balance {
+  position: relative;
+  background: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.todo .make-list-outline .make-list .budget-container .money .balance:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#000E5A), color-stop(#0026F7), color-stop(#8D03E4), to(#D30176));
+  background: linear-gradient(to left, #000E5A, #0026F7, #8D03E4, #D30176);
+  border-radius: inherit;
+  opacity: .1;
+}
+
+.todo .make-list-outline .make-list .clear-list .btn-clear {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0 15px;
+  width: 100%;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  color: darkslategrey;
+  font-size: 1.2rem;
+  font-family: Godzilla;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.todo .make-list-outline .make-list .clear-list .btn-clear:hover {
+  color: #000E5A;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.todo .make-list-outline .make-list .clear-list h6 {
+  color: #000E5A;
+  border-bottom: 0.002px solid rgba(47, 79, 79, 0.4);
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1150px) {
+  .summary {
+    width: 100%;
+  }
+  .summary h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .summary .summary-items .completed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .summary .summary-items .completed h1 {
+    font-size: 1.5rem;
+  }
+  .summary .summary-items .completed h2 {
+    font-size: 3rem;
+  }
+  .summary .summary-items .pending {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .summary .summary-items .pending h1 {
+    font-size: 1.5rem;
+  }
+  .summary .summary-items .pending h2 {
+    font-size: 3rem;
+  }
+  .summary .summary-items .total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+  }
+  .summary .summary-items .total h1 {
+    font-size: 1.5rem;
+  }
+  .summary .summary-items .total h2 {
+    font-size: 3rem;
+  }
+  .summary .total-products {
+    display: none;
+  }
+  .summary button {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    padding: 1px 0;
+  }
+  .budget-container {
+    background: url(../../assets/white-paper-texture.jpg);
+    background-size: contain;
+    background-position: center;
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
+    max-height: 600px;
+    -webkit-box-shadow: 2px 2px 9px lightblue;
+            box-shadow: 2px 2px 9px lightblue;
+    border-radius: 5px;
+  }
+  .budget-container .my-list ul {
+    padding: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 300px;
+    overflow: scroll;
+  }
+  .budget-container .my-list ul li {
+    border-left: 1px solid #8400ff;
+  }
+  .budget-container .my-list ul li h5 {
+    font-size: 1rem;
+    color: #000E5A;
+    background: none;
+  }
+  .budget-container .my-list ul li div {
+    min-width: 20%;
+  }
+  .budget-container .my-list ul li div span {
+    color: darkslategray;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .budget-container .my-list ul li div span:hover {
+    color: #00e096;
+  }
+  .budget-container .my-list ul li div .icon-edit {
+    color: orange !important;
+    cursor: pointer;
+  }
+  .budget-container .my-list ul li div .icon-delete {
+    color: orange !important;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=todo.css.map */
